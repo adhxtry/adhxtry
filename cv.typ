@@ -251,6 +251,6 @@
   #text(
     size: 9pt,
     stroke: .01pt,
-    emph[This document is written using #link("https://typst.app")[Typst]]
+    emph[For latest version, visit: #link("https://adhtri001.github.io/AdhTri001/cv_adheesh.pdf")[adhtri001.github.io]]
   )
 ]
