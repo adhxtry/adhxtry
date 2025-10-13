@@ -1,0 +1,5 @@
+.vscode
+
+# All the pdf files other than docs
+*.pdf
+!docs/*.pdf
