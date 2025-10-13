@@ -1,3 +1,8 @@
+/**
+ * Copyright (c) 2025 Adheesh Trivedi — Licensed under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
+ */
+
+
 #import "clickworthy-resume/lib.typ": *
 #import "@preview/fontawesome:0.6.0"
 
@@ -39,7 +44,7 @@
   margin: margin,
 )
 
-#import "config.typ": interest-line, latex
+#import "config.typ": compact-list-line, latex
 
 // = Academic Interests
 
@@ -63,7 +68,7 @@
     ("B.S.", "Computer Science & Engineering"),
   ),
   gpa: [9.08 #footnote("Ongoing", numbering: "*")<ongoing>/10 (3.63/4)],
-  extra: interest-line((
+  extra: compact-list-line((
     "O (Outstanding): 10/10",
     "A: 10/10",
     "B+: 9/10",
@@ -233,7 +238,7 @@
 
 = Additional Interests
 
-#interest-line((
+#compact-list-line((
   "Music (Guitar)",
   "Competitive Programming",
   "Speed Typing",

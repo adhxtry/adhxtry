@@ -1,12 +1,17 @@
+/**
+ * Copyright (c) 2025 Adheesh Trivedi — Licensed under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
+ */
+
+
 // Custom CV configuration & reusable helpers
 // Centralizes helper functions and data lists for interests & other
 // lightweight configurable elements to keep `cv.typ` clean.
 
 // Separator used between inline interest items
-#let interest-sep = " • "
+#let compact-list-sep = " • "
 
 // Join an array of strings into a single interest line
-#let interest-line = (items) => items.join(interest-sep)
+#let compact-list-line = (items) => items.join(compact-list-sep)
 
 #let latex = {
     set text(font: "New Computer Modern")

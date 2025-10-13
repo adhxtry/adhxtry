@@ -1,3 +1,8 @@
+/**
+ * Copyright (c) 2025 Adheesh Trivedi — Licensed under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
+ */
+
+
 #import "clickworthy-resume/lib.typ": *
 
 // Personal Information
