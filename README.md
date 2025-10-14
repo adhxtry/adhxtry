@@ -20,7 +20,6 @@
 #### Friends with 🤝 (Exploring)
 - Go
 - Typescript + HTML + CSS + React
-- Dart and Flutter
 
 #### Crush 😳 (Want to explore more)
 - Rust
@@ -30,6 +29,7 @@
 #### That one friend we met online 😔 (Very previously learned)
 - Java
 - QBasic
+- [BBTag](https://blargbot.xyz/)
 
 ----
 

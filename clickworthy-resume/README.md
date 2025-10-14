@@ -1,5 +1,3 @@
-<div align="center">
-
 # clickworthy-resume
 
 This library provides components and styles to create a visually appealing and effective resume/CV using [Typst](https://typst.app).

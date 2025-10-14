@@ -11,9 +11,9 @@
 #let email = "adheeshtrivedi@gmail.com"
 #let contacts = (
   link("mailto:" + email)[#fontawesome.fa-envelope() #email],
-  link("https://github.com/AdhTri001")[#fontawesome.fa-github() AdhTri001],
-  link("https://linkedin.com/in/AdhTri001")[#fontawesome.fa-linkedin() AdhTri001],
-  link("https://adhtri001.github.io")[#fontawesome.fa-link() adhtri001.github.io],
+  link("https://github.com/adhxtry/")[#fontawesome.fa-github() adhxtry],
+  link("https://linkedin.com/in/AdhTri001/")[#fontawesome.fa-linkedin() AdhTri001],
+  link("https://adhxtry.github.io/portfolio/")[#fontawesome.fa-link() adhxtry.github.io],
 )
 
 #let location = [4#super("th") year, BS Computer Science & Engineering, IISER Bhopal, India]
@@ -256,6 +256,6 @@
   #text(
     size: 9pt,
     stroke: .01pt,
-    emph[For latest version, visit: #link("https://adhtri001.github.io/AdhTri001/cv_adheesh.pdf")[adhtri001.github.io]]
+    emph[For latest version, visit: #link("https://adhxtry.github.io/adhxtry/cv_adheesh.pdf")[adhxtry.github.io]]
   )
 ]
