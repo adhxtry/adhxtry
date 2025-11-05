@@ -20,12 +20,13 @@
 
 // Resume configuration
 #let theme = rgb("#26428b")
-#let font = "New Computer Modern"
-#let fontSize = 11pt
+#let font = "Calibri"
+#let fontSize = 11.5pt
 #let lang = "en"
+#let latest-version-url = "https://adhxtry.github.io/adhxtry/cv_adheesh.pdf"
 #let margin = (
   top: 3em,
-  bottom: 6em,
+  bottom: 4em,
   left: 4em,
   right: 4em,
 )
@@ -41,22 +42,18 @@
   font: font,
   font-size: fontSize,
   lang: lang,
+  latest-version-url: latest-version-url,
   margin: margin,
 )
 
-#import "config.typ": compact-list-line, latex
+#import "meta/config.typ": compact-list-line, latex
 
-// = Academic Interests
+// Important people mentioned in the CV
+#import "meta/people.typ": *
 
-// #interest-line((
-//   "Algorithms",
-//   "Graph Theory",
-//   "Complexity Theory",
-//   "Model Checking & Formal Verification",
-//   "Parsing & Domain-Specific Languages",
-//   "Low Level Programming",
-//   "Machine Learning"
-// ))
+#show "Dr. Prafullkumar Tale": dr_prafull
+#show "Dr. Arpit Sharma": dr_arpits
+#show "Prof. Varadharajan Srinivasan": prof_vardha
 
 = Education
 
@@ -115,6 +112,9 @@
   title: "Scientific Tool for Bridging Model Checking Ecosystems",
   organization: "Mentor: Dr. Arpit Sharma, PhD. Shonak Shaha",
   date: "Dec 2024 – Present",
+  links: (
+    (fontawesome.fa-github(), "https://github.com/GALTOSM/"),
+  ),
   details: [
     - The Model Checking ecosystem remains fragmented, with various tools and frameworks lacking
       seamless interoperability specifically between action based and state based model checking.
@@ -123,7 +123,7 @@
       (#link("https://www.prismmodelchecker.org/")[PRISM]) / (#link("https://www.stormchecker.org/")[Storm])
       to enable cross-ecosystem model checking.
     - Emphasis on parser design, memory-efficient graph transformations, semantic preservation,
-      and inter-operability testing..
+      and inter-operability testing.
   ],
 )
 
@@ -131,12 +131,15 @@
   title: "On the feasibility of parameterized algorithms for VC Dimensions",
   organization: "Mentor: Dr. Prafullkumar Tale",
   date: "May 2025 – July 2025",
+  links: (
+    (fontawesome.fa-github(), "https://github.com/adhxtry/tree-decomposition"),
+  ),
   details: [
     - #smallcaps[VC Dimension] of a classification model is related to how complicated it can be,
       specifically in terms of the model's capacity to fit various datasets.
       Precisely, model's ability to generalize to unseen data.
     - Tested efficient algorithms for computing the #smallcaps[Graph VC Dimension].
-    - Assessed and compared the parameterized algorithms for #smallcaps[Graph VC Dimension].
+    - Assessed and compared the parameterized algorithm with current state-of-the-art for #smallcaps[Graph VC Dimension] for real world networks.
   ],
 )
 
@@ -144,6 +147,9 @@
   title: "Reading Project on Graph Theory",
   organization: "Mentor: Dr. Prafullkumar Tale",
   date: "Jan 2024 – Apr 2024",
+  links: (
+    (fontawesome.fa-book(), "https://books.google.co.in/books/about/A_First_Look_at_Graph_Theory.html?id=vLRNRebXuKYC"),
+  ),
   details: [
     - Studied #emph[A First Look at Graph Theory] (Clark & Holton) with problem solving.
     - Reinforced concepts: Graphs & their types, connectivity, traversals, matching problem,
@@ -155,7 +161,7 @@
 = Technical Projects
 
 #exp(
-  title: "Extensively Customizable Exam Scheduler (Graph Coloring)",
+  title: "Extensively Customizable Exam Scheduler using Graph Coloring",
   organization: "Vivek Kumar, Rahul Jana, Ayushman Shaha, Dr. Prafullkumar Tale",
   date: "Oct 2024 – Jan 2025",
   details: [
@@ -170,6 +176,9 @@
 #exp(
   title: "Texture Classification & Face Clustering for Image Search",
   date: "Sep 2024 – Nov 2024",
+  links: (
+    (fontawesome.fa-github(), "https://github.com/adhxtry/nomadium"),
+  ),
   details: [
     - The project aims to address the common challenge of navigating through directories containing a large
       collection of images, enabling users to efficiently filter and search for images.
@@ -179,8 +188,28 @@
 )
 
 #exp(
-  title: "Bag-of-Words Chatbot (Context-Aware)",
+  title: "GUI Developer Intern",
+  organization: "Mentor: Prof. Varadharajan Srinivasan",
+  date: "Feb 2024 – Aug 2024",
+  location: "AITG Labs",
+  links: (
+    (fontawesome.fa-github(), "https://github.com/aitgcodes/litesoph"),
+    (fontawesome.fa-link(), "https://aitgcodes.github.io/litesoph-website/"),
+  ),
+  details: [
+    - Led integration of scientific engines (#link("https://octopus-code.org/")[Octopus],
+      #link("https://gpaw.readthedocs.io/")[GPAW], #link("https://www.nwchem-sw.org/")[NWChem])
+      within a Python toolkit for photo-induced phenomena simulations.
+    - Automated submission workflows and job orchestration on national HPC clusters (PARAM-Ganga / PARAM-Kamrupa).
+  ],
+)
+
+#exp(
+  title: "Context aware Bag-of-Words Chatbot",
   date: "Oct 2021 – Dec 2021",
+  links: (
+    (fontawesome.fa-github(), "https://github.com/adhxtry/tensorBot"),
+  ),
   details: [
     - Built a context-aware chatbot supporting tasks like to-do lists, word definitions, note taking,
       and time queries across timezones.
@@ -191,6 +220,9 @@
 #exp(
   title: "General Purpose Discord Bot",
   date: "Mar 2021",
+  links: (
+    (fontawesome.fa-github(), "https://github.com/adhxtry/UFO-BOT"),
+  ),
   details: [
     - Implemented modules for moderation, games, music playback, jokes & meme generation.
     - The project was written in Python and utilized PostgreSQL database to store every configuration for the bot,
@@ -198,42 +230,50 @@
   ],
 )
 
-#exp(
-  title: "GUI Developer Intern (Litesoph, AITG)",
-  organization: "Mentor: Prof. Varadharajan Srinivasan",
-  date: "Feb 2024 – Aug 2024",
-  details: [
-    - Led integration of scientific engines (#link("https://octopus-code.org/")[Octopus],
-      #link("https://gpaw.readthedocs.io/")[GPAW], #link("https://www.nwchem-sw.org/")[NWChem])
-      within a Python toolkit for photo-induced phenomena simulations.
-    - Automated submission workflows and job orchestration on national HPC clusters (PARAM-Ganga / PARAM-Kamrupa).
-  ],
-)
 
-
-= Leadership & Service
+= Leadership & Engagement
 
 #exp(
-  title: "Coordinator – Coding Club",
-  organization: "IISER Bhopal",
+  title: "Club Coordinator",
+  organization: "Coding club @ IISER Bhopal",
   date: "May 2024 – May 2025",
-  details: [
-    - The club aims to foster competitive programming skills and algorithmic thinking among students.
-    - It organizes onsite competitive programming contests; facilitates open discussions & tutorials.
-    - I actively mentor junior members and led workshops on advanced topics.
-  ],
+  // details: [
+  //   - The club aims to foster competitive programming skills and algorithmic thinking among students.
+  //   - It organizes onsite competitive programming contests; facilitates open discussions & tutorials.
+  //   - I actively mentor junior members and led workshops on advanced topics.
+  // ],
 )
 
 #exp(
   title: "Hackathon Organizer – Armacode 0",
   organization: "IISER Bhopal × IIIT Bhopal",
   date: "Jan 2024 – Apr 2024",
-  details: [
-    - Prepared questions for online round with over 500 applicants.
-    - Co-organized a 35-hour national hackathon; collaborated with faculty and industry experts on
-      problem design and judging of 12 onsite teams.
-  ],
+  // details: [
+  //   - Prepared questions for online round with over 500 applicants.
+  //   - Co-organized a 35-hour national hackathon; collaborated with faculty and industry experts on
+  //     problem design and judging of 12 onsite teams.
+  // ],
 )
+
+
+= Talks & Teaching
+
+#exp(
+  title: "Teaching Assistant - Theory of Computation",
+  organization: "Instructed by Dr. Arpit Sharma",
+  date: "Aug 2025 – Dec 2025",
+)
+
+#exp(
+  title: "Fast Matrix Multiplication Algorithms",
+  organization: "Math Club @ IISER Bhopal",
+  date: "1 Sept 2023",
+  links: (
+    (fontawesome.fa-file-text(), "https://github.com/adhxtry/iiserbCodeCollective/tree/main/1_StrassenMultiplication"),
+  ),
+  details: [
+  - Delivered a talk on Strassen's algorithm and its implications on computational complexity.
+])
 
 
 = Additional Interests
@@ -242,20 +282,8 @@
   "Music (Guitar)",
   "Competitive Programming",
   "Speed Typing",
-  "Mathematical Visualization (Desmos)",
+  "Mathematical Visualization (Desmos, Manim)",
 ))
 
 // Publications section can be added if bibliography entries are available.
-
-
-// END
-
-#v(1fr, weak: true)
-
-#align(right)[
-  #text(
-    size: 9pt,
-    stroke: .01pt,
-    emph[For latest version, visit: #link("https://adhxtry.github.io/adhxtry/cv_adheesh.pdf")[adhxtry.github.io]]
-  )
-]
+// Hopefully soon :/

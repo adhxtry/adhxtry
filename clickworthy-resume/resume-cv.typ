@@ -14,6 +14,7 @@ https://github.com/typst/packages/blob/2da94b0f21174ae8366834332a6e44fd966de4dd/
   font: "New Computer Modern",
   font-size: 11pt,
   lang: "en",
+  latest-version-url: "",
   margin: (
     top: 1cm,
     bottom: 0cm,
@@ -44,9 +45,16 @@ https://github.com/typst/packages/blob/2da94b0f21174ae8366834332a6e44fd966de4dd/
       )
       #grid(
         rows: 1fr,
-        columns: (1fr, auto),
+        columns: (1fr, 1fr, 1fr),
         align(left)[
           #smallcaps[#datetime.today().display("[month repr:short] [day], [year]")]
+        ],
+        align(center)[
+          #if latest-version-url != "" {
+            text(size: 9pt, )[
+              Click #link(latest-version-url)[here] for the latest version
+            ]
+          }
         ],
         align(right)[
           #smallcaps[Page #counter(page).display("1")]
@@ -54,6 +62,8 @@ https://github.com/typst/packages/blob/2da94b0f21174ae8366834332a6e44fd966de4dd/
       )
     ],
   )
+
+  set list(marker: [--])
 
   show link: set text(
     fill: rgb("#0645AD")
@@ -73,19 +83,18 @@ https://github.com/typst/packages/blob/2da94b0f21174ae8366834332a6e44fd966de4dd/
   // Author
   align(center)[
     #block(text(weight: 700, 2.5em, [#smallcaps(author)]))
-  ]
 
-  // Contact Information
-  align(center)[
-    #[#contacts.join("  |  ")]
-  ]
+    // Contact Information
+    #pad(
+      top: -0.5em,
+      contacts.join("  |  ")
+    )
 
-  // Location
-  if location != "" {
-    align(center)[
-      #smallcaps[#location]
-    ]
-  }
+    // Location
+    #if location != "" {
+      smallcaps[#location]
+    }
+  ]
 
   // Main body.
   set par(
@@ -201,18 +210,28 @@ Experience section formatting logic.
   organization: "",
   date: "",
   location: "",
+  links: (),
   details: [],
   hide: false,
 ) = {
   if hide {
     return
   }
+  if links != () {
+    place(left, dx: -1.5em, dy: .5em)[
+      #for (icon, link_) in links [
+        #link(link_)[#icon]
+        #linebreak()
+      ]
+    ]
+  }
   pad(
+    top: .2em,
     bottom: -0.3em,
     grid(
       columns: (auto, 1fr),
       align(left)[
-        #strong[#title] \
+        #strong(title) \
         #emph[#organization]
       ],
       align(right)[
@@ -225,7 +244,16 @@ Experience section formatting logic.
       ]
     )
   )
-  details
+  if details != [] {
+    pad(
+      left: .1em,
+      top: -.2em,
+      block(
+        stroke: (left: rgb("#ccc")),
+        details
+      )
+    )
+  }
 }
 
 /*
