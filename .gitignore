@@ -3,3 +3,8 @@
 # All the pdf files other than docs
 *.pdf
 !docs/*.pdf
+
+# Ignore local folder, where the pdfs are tested while working locally
+local/
+# Ignore all local sop-*.typ files
+sop-*.typ

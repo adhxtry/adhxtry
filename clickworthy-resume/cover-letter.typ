@@ -7,10 +7,8 @@ https://career.engin.umich.edu/sample-cover-letter/
 
 #let cover-letter(
   author: "",
-  location: "",
   contacts: (),
   date: datetime.today().display(),
-  addressee-name: "",
   addressee-institution: "",
   addressee-address: "",
   addressee-city: "",
@@ -28,6 +26,12 @@ https://career.engin.umich.edu/sample-cover-letter/
   ),
   body,
 ) = {
+
+  show raw: it => {
+    set text(font: font, weight: 800)
+    [[#smallcaps(it)]]
+    h(0.5em)
+  }
 
   // Sets document metadata
   set document(author: author, title: author)
@@ -48,42 +52,36 @@ https://career.engin.umich.edu/sample-cover-letter/
     fill: rgb("#0645AD")
   )
 
-  // Author
   align(center)[
+    // Author
     #block(text(weight: 700, 2.5em, [#smallcaps(author)]))
+
+    // Contact Information
+    #pad(
+      top: -0.5em,
+      contacts.join("  |  ")
+    )
   ]
 
-  // Contact Information
-  align(center)[
-    #[#contacts.join("  |  ")]
-  ]
-
-  // Location
-  if location != "" {
-    align(center)[
-      #smallcaps[#location]
-    ]
-  }
-
-  // Date
   pad(
     top: 1em,
     bottom: 0.5em,
-    align(left)[
-      #strong()[#date]
-    ]
-  )
+    grid(
+      columns: (1fr, 1fr),
 
-  // Addressee Information
-  pad(
-    bottom: 1em,
-    align(left)[
-      #strong[#addressee-name] \
-      #addressee-institution \
-      #addressee-address \
-      #{addressee-city + ", " + addressee-state + " " + addressee-zip} \
-      #addressee-country
-    ]
+      // Addressee Information
+      align(left)[
+        #strong(addressee-institution) \
+        #addressee-address \
+        #{addressee-city + ", " + addressee-state + " " + addressee-zip} \
+        #addressee-country
+      ],
+
+      // Date
+      align(right)[
+        #strong()[#date]
+      ]
+    )
   )
 
   // Main body.

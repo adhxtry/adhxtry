@@ -80,8 +80,8 @@ https://github.com/typst/packages/blob/2da94b0f21174ae8366834332a6e44fd966de4dd/
     #line(length: 100%, stroke: 1pt)
   ]
 
-  // Author
   align(center)[
+    // Author
     #block(text(weight: 700, 2.5em, [#smallcaps(author)]))
 
     // Contact Information
