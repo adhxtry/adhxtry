@@ -100,6 +100,9 @@
   title: "On Robust Coloring of Graphs and ETH",
   organization: "Mentor: Dr. Prafullkumar Tale",
   date: "July 2025 – Present",
+  links: (
+    (fontawesome.fa-dropbox(), "https://www.dropbox.com/scl/fi/sryhu6iqr1htdpbcw8hb9/Robust_Coloring.pdf?rlkey=ndy34qaxtrfn9zpv5tzynt7yd&st=f418jyvl&dl=0"),
+  ),
   details: [
     - Studing a relaxation of proper coloring in which edges with same color are associated
       with some cost.
@@ -164,6 +167,9 @@
   title: "Extensively Customizable Exam Scheduler using Graph Coloring",
   organization: "Vivek Kumar, Rahul Jana, Ayushman Shaha, Dr. Prafullkumar Tale",
   date: "Oct 2024 – Jan 2025",
+  links: (
+    (fontawesome.fa-github(), "https://github.com/adhxtry/exam_scheduler"),
+  ),
   details: [
     - Discovered that exam schedules for 14,000+ students and course registrations were being created manually,
       requiring significant effort.
@@ -231,6 +237,26 @@
 )
 
 
+= Talks & Teaching
+
+#exp(
+  title: "Teaching Assistant - Theory of Computation",
+  organization: "Instructed by Dr. Arpit Sharma",
+  date: "Aug 2025 – Dec 2025",
+)
+
+#exp(
+  title: "Fast Matrix Multiplication Algorithms",
+  organization: "Math Club @ IISER Bhopal",
+  date: "1 Sept 2023",
+  links: (
+    (fontawesome.fa-file-text(), "https://github.com/adhxtry/iiserbCodeCollective/tree/main/1_StrassenMultiplication"),
+  ),
+  details: [
+  - Delivered a talk on Strassen's algorithm and its implications on computational complexity.
+])
+
+
 = Leadership & Engagement
 
 #exp(
@@ -254,26 +280,6 @@
   //     problem design and judging of 12 onsite teams.
   // ],
 )
-
-
-= Talks & Teaching
-
-#exp(
-  title: "Teaching Assistant - Theory of Computation",
-  organization: "Instructed by Dr. Arpit Sharma",
-  date: "Aug 2025 – Dec 2025",
-)
-
-#exp(
-  title: "Fast Matrix Multiplication Algorithms",
-  organization: "Math Club @ IISER Bhopal",
-  date: "1 Sept 2023",
-  links: (
-    (fontawesome.fa-file-text(), "https://github.com/adhxtry/iiserbCodeCollective/tree/main/1_StrassenMultiplication"),
-  ),
-  details: [
-  - Delivered a talk on Strassen's algorithm and its implications on computational complexity.
-])
 
 
 = Additional Interests
