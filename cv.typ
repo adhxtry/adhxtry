@@ -84,6 +84,7 @@
     [Theory of Computation (A)],
     [Principles of Model Checking (A)],
     [Fundamentals of Database Systems (O)],
+    [Algorithms (A)],
     [Machine Learning (B+)],
     [Computer Vision (B)],
     [Artificial Intelligence (B+)],
