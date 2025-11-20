@@ -164,6 +164,21 @@
 
 = Technical Projects
 
+
+
+#exp(
+  title: "Extensively Customizable Exam Scheduler using Graph Coloring",
+  date: "Oct 2025 – Nov 2025",
+  links: (
+    (fontawesome.fa-github(), "https://github.com/adhxtry/nifty-network-analysis"),
+    (fontawesome.fa-file-alt(), "https://www.dropbox.com/scl/fi/ce0myxe9vjwig55hgjws4/main.pdf?rlkey=zp2yls1yb8cix0rfwd1t2w0cc&st=seglxg08&dl=0")
+  ),
+  details: [
+    - Analyzed relationships among major Nifty companies and summarized insights in an interactive dashboard and formal report.
+    - Delivered clear visual findings on market structure, influential firms, and cluster patterns for course project.
+  ],
+)
+
 #exp(
   title: "Extensively Customizable Exam Scheduler using Graph Coloring",
   organization: "Vivek Kumar, Rahul Jana, Ayushman Shaha, Dr. Prafullkumar Tale",
@@ -172,11 +187,13 @@
     (fontawesome.fa-github(), "https://github.com/adhxtry/exam_scheduler"),
   ),
   details: [
-    - Discovered that exam schedules for 14,000+ students and course registrations were being created manually,
-      requiring significant effort.
-    - Developed an engine that assigns exams to time slots & halls minimizing same-day conflicts ($<=$24h) using
+    - Discovered that exam schedules for 2,000+ students in my college
+      were being created manually, requiring significant effort.
+    - Developed an engine that assigns exams to time slots & halls
+      minimizing same-day conflicts ($<=$24h) using
       graph coloring + randomized optimization heuristics.
-    - Supports multi-hall allocation when enrollment exceeds single capacity; leverages NetworkX for constraint modeling.
+    - Supports multi-hall allocation when enrollment exceeds single capacity;
+      leverages NetworkX for constraint modeling.
   ],
 )
 
@@ -190,7 +207,7 @@
     - The project aims to address the common challenge of navigating through directories containing a large
       collection of images, enabling users to efficiently filter and search for images.
     - Pipeline: MTCNN detection → InceptionResNetV1 embeddings → cosine similarity for face grouping.
-    - Implemented batching to control GPU memory; evaluated multiple texture descriptors for retrieval precision.
+    - Implemented batching to control GPU memory and multiple texture descriptors for retrieval precision.
   ],
 )
 
@@ -231,9 +248,7 @@
     (fontawesome.fa-github(), "https://github.com/adhxtry/UFO-BOT"),
   ),
   details: [
-    - Implemented modules for moderation, games, music playback, jokes & meme generation.
-    - The project was written in Python and utilized PostgreSQL database to store every configuration for the bot,
-      which was server and user specific. The bot was designed to be scalable.
+    - Python project that utilized PostrgreSQL to implement feature reach Discord bot.
   ],
 )
 

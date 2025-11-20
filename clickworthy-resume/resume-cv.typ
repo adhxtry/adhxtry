@@ -220,8 +220,11 @@ Experience section formatting logic.
   if links != () {
     place(left, dx: -1.5em, dy: .5em)[
       #for (icon, link_) in links [
-        #link(link_)[#icon]
-        #linebreak()
+        #align(
+          center,
+          link(link_)[#icon]
+        )
+        #v(-.5em)
       ]
     ]
   }
