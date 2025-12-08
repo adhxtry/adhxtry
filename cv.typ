@@ -78,16 +78,16 @@
     [Complex Variables (A)],
     [Real Analysis (B+)],
     [Applied Optimization (B+)],
-    [Introduction to C Programming (A)],
-    [Data Structures & Algorithms (B+)],
     [Signals & Systems (A)],
     [Theory of Computation (A)],
     [Principles of Model Checking (A)],
-    [Fundamentals of Database Systems (O)],
     [Algorithms (A)],
     [Machine Learning (B+)],
     [Computer Vision (B)],
     [Artificial Intelligence (B+)],
+    [Database Management (O)],
+    [Introduction to C Programming (A)],
+    [Data Structures & Algorithms (B+)],
     [Group Theory @ongoing],
     [Modern Cryptography @ongoing],
     [Information Theory & Coding @ongoing],
@@ -161,10 +161,22 @@
   ],
 )
 
+= Skills
+
+#compact-list-line(
+  (
+    "Python (NumPy, Pandas, Matplotlib, NetworkX)",
+    "C++ (CMake, Large Scale Projects)",
+    "Git & GitHub",
+    "LaTeX",
+    "Linux",
+    "Development automation (CI/CD with GitHub Actions)",
+    "Basic React"
+  )
+)
+
 
 = Technical Projects
-
-
 
 #exp(
   title: "Nifty Network Analysis & Visualization Dashboard",

@@ -172,18 +172,20 @@ Education section formatting, allowing enumeration of degrees and GPA.
     )
     pad(
       top: -.5em,
-      left: 1em,
-      right: 1em,
       grid(
-        columns: (50%,) * 2,
+        columns: (33%,) * 3,
         rows: 1.1em,
-        ..(courses.slice(0, calc.ceil(courses.len() / 2)).map(
+        ..(courses.slice(0, calc.ceil(courses.len() / 3)).map(
           grid.cell.with(x: 0)
         )),
 
-        ..(courses.slice(calc.ceil(courses.len() / 2), courses.len()).map(
+        ..(courses.slice(calc.ceil(courses.len() / 3), calc.ceil(2 * courses.len() / 3)).map(
           grid.cell.with(x: 1)
-        ))
+        )),
+
+        ..(courses.slice(calc.ceil(2 * courses.len() / 3), courses.len()).map(
+          grid.cell.with(x: 2)
+        )),
       )
     )
   }
