@@ -167,7 +167,7 @@
 
 
 #exp(
-  title: "Extensively Customizable Exam Scheduler using Graph Coloring",
+  title: "Nifty Network Analysis & Visualization Dashboard",
   date: "Oct 2025 – Nov 2025",
   links: (
     (fontawesome.fa-github(), "https://github.com/adhxtry/nifty-network-analysis"),
