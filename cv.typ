@@ -92,6 +92,7 @@
     [Modern Cryptography @ongoing],
     [Information Theory & Coding @ongoing],
     [Computer Organization @ongoing],
+    [Computer Networks @ongoing],
   ),
 )
 
