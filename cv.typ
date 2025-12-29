@@ -64,7 +64,7 @@
   degrees: (
     ("B.S.", "Computer Science & Engineering"),
   ),
-  gpa: [9.08 #footnote("Ongoing", numbering: "*")<ongoing>/10 (3.63/4)],
+  gpa: [9.25 #footnote("Ongoing", numbering: "*")<ongoing>/10 (3.7/4)],
   extra: compact-list-line((
     "O (Outstanding): 10/10",
     "A: 10/10",
@@ -77,6 +77,7 @@
     [Probability & Statistics (A)],
     [Complex Variables (A)],
     [Real Analysis (B+)],
+    [Linear Algebra (A)],
     [Applied Optimization (B+)],
     [Signals & Systems (A)],
     [Theory of Computation (A)],
@@ -88,11 +89,11 @@
     [Database Management (O)],
     [Introduction to C Programming (A)],
     [Data Structures & Algorithms (B+)],
-    [Group Theory @ongoing],
-    [Modern Cryptography @ongoing],
-    [Information Theory & Coding @ongoing],
-    [Computer Organization @ongoing],
-    [Computer Networks @ongoing],
+    [Group Theory (B+)],
+    [Modern Cryptography (A)],
+    [Information Theory & Coding (A)],
+    [Computer Organization (A)],
+    [Computer Networks (A)],
   ),
 )
 
@@ -143,7 +144,6 @@
     - #smallcaps[VC Dimension] of a classification model is related to how complicated it can be,
       specifically in terms of the model's capacity to fit various datasets.
       Precisely, model's ability to generalize to unseen data.
-    - Tested efficient algorithms for computing the #smallcaps[Graph VC Dimension].
     - Assessed and compared the parameterized algorithm with current state-of-the-art for #smallcaps[Graph VC Dimension] for real world networks.
   ],
 )
