@@ -59,97 +59,101 @@
 
 #edu(
   institution: "IISER Bhopal",
-  date: "2022 – 2026",
+  date: [ 2022 -- 2026 ],
   location: "Bhopal, India",
   degrees: (
     ("B.S.", "Computer Science & Engineering"),
   ),
   gpa: [9.25 #footnote("Ongoing", numbering: "*")<ongoing>/10 (3.7/4)],
   courses: (
-    [Multivariable Calculus],
     [Discrete Mathematics],
     [Probability & Statistics],
     [Complex Variables],
+    [Group Theory],
     [Real Analysis],
     [Linear Algebra],
+    [Multivariable Calculus],
     [Applied Optimization],
-    [Software Modelling & Verification],
-    [Signals & Systems],
     [Theory of Computation],
-    [Algorithms],
+    [Signals & Systems],
     [Machine Learning],
     [Computer Vision],
     [Artificial Intelligence],
-    [Database Management],
+    [Database Systems],
     [Introduction to C Programming],
     [Data Structures & Algorithms],
-    [Group Theory],
+    [Algorithms (Advanced)],
+    [Software Modelling & Verification],
     [Modern Cryptography],
     [Information Theory & Coding],
     [Computer Organization],
     [Network Sciences],
+    [Operating Systems@ongoing],
     [Computer Networks@ongoing],
     [Advanced Programming@ongoing],
     [Compiler Design@ongoing],
-    [Operating Systems@ongoing],
   ),
 )
 
 = Research Projects
 
 #exp(
+  title: "Practical study on embeddings between KS and LTS",
+  organization: "Mentor: Dr. Arpit Sharma, PhD. Shonak Saha",
+  date: [ Dec 2025 -- Apr 2026 ],
+  links: (
+    (fontawesome.fa-dropbox(), "https://www.dropbox.com/scl/fi/gi8ph0m3fbm3bztdnmmvw/bs-project.pdf?rlkey=kx55612n6a3dmze9xjnx5uvcs&st=mvkn174b&dl=0"),
+  ),
+  details: [
+    - Built an Python framework unifying model checking across multiple backends
+      (NuSMV, Spin, Storm) by embedding #smallcaps[Labelled Transition Systems] into
+      #smallcaps[Kripke Structures].
+    - Benchmarked and studied the feasibility of explicit model checking in embedded models.
+  ]
+)
+
+#exp(
   title: "On Robust Coloring of Graphs and ETH",
   organization: "Mentor: Dr. Prafullkumar Tale",
-  date: "July 2025 – Present",
+  date: [ July 2025 -- Jan 2026 ],
   links: (
     (fontawesome.fa-dropbox(), "https://www.dropbox.com/scl/fi/sryhu6iqr1htdpbcw8hb9/Robust_Coloring.pdf?rlkey=ndy34qaxtrfn9zpv5tzynt7yd&st=f418jyvl&dl=0"),
   ),
   details: [
-    - Studing a relaxation of proper coloring in which edges with same color are associated
+    - Studied a relaxation of proper coloring in which edges with same color are associated
       with some cost.
     - Studied the #smallcaps[Exponential Time Hypothesis], and ETH-Preserving reductions.
     - Investigated treewidth; applied tree decompositions to dynamic programming on hard problems.
   ],
 )
 
+
 #exp(
   title: "Scientific Tool for Bridging Model Checking Ecosystems",
   organization: "Mentor: Dr. Arpit Sharma, PhD. Shonak Shaha",
-  date: "Dec 2024 – Present",
+  date: "Dec 2024 – Dec 2025",
   links: (
     (fontawesome.fa-github(), "https://github.com/GALTOSM/"),
   ),
   details: [
-    - The Model Checking ecosystem remains fragmented, with various tools and frameworks lacking
-      seamless interoperability specifically between action based and state based model checking.
-    - Developing high-performance converters between action-labeled models (#link("https://cadp.inria.fr/")[CADP])
-      and (#link("https://www.mcrl2.org/")[mCRL2]) and state-labeled models
-      (#link("https://www.prismmodelchecker.org/")[PRISM]) / (#link("https://www.stormchecker.org/")[Storm])
+    - The Model Checking ecosystem remains fragmented, with various tools and
+      frameworks lacking seamless interoperability specifically between action based and
+      state based model checking.
+    - Developing high-performance converters between action-labeled model checkers
+      (#link("https://cadp.inria.fr/")[CADP]) and (#link("https://www.mcrl2.org/")[mCRL2])
+      and state-labeled model checkers
+      (#link("https://www.prismmodelchecker.org/")[PRISM]) and
+      (#link("https://www.stormchecker.org/")[Storm])
       to enable cross-ecosystem model checking.
-    - Emphasis on parser design, memory-efficient graph transformations, semantic preservation,
-      and inter-operability testing.
-  ],
-)
-
-#exp(
-  title: "On the feasibility of parameterized algorithms for VC Dimensions",
-  organization: "Mentor: Dr. Prafullkumar Tale",
-  date: "May 2025 – July 2025",
-  links: (
-    (fontawesome.fa-github(), "https://github.com/adhxtry/tree-decomposition"),
-  ),
-  details: [
-    - #smallcaps[VC Dimension] of a classification model is related to how complicated it can be,
-      specifically in terms of the model's capacity to fit various datasets.
-      Precisely, model's ability to generalize to unseen data.
-    - Assessed and compared the parameterized algorithm with current state-of-the-art for #smallcaps[Graph VC Dimension] for real world networks.
+    - Emphasis on parser design, efficient graph transformations,
+      and AST driven translation, written in C++.
   ],
 )
 
 #exp(
   title: "Reading Project on Graph Theory",
   organization: "Mentor: Dr. Prafullkumar Tale",
-  date: "Jan 2024 – Apr 2024",
+  date: [ Jan 2024 -- Apr 2024 ],
   links: (
     (fontawesome.fa-book(), "https://books.google.co.in/books/about/A_First_Look_at_Graph_Theory.html?id=vLRNRebXuKYC"),
   ),
@@ -164,13 +168,15 @@
 
 #compact-list-line(
   (
-    "Python (NumPy, Pandas, Matplotlib, NetworkX)",
-    "C++ (CMake, Large Scale Projects)",
+    "Python",
+    "C++ (CMake, GoogleTest)",
     "Git & GitHub",
     latex,
-    "Linux",
-    "Development automation (CI/CD with GitHub Actions)",
-    "Basic React"
+    "typst",
+    "Linux Shell",
+    "CI/CD",
+    "React (basic)",
+    "Rust (basic)"
   )
 )
 
@@ -179,7 +185,7 @@
 
 #exp(
   title: "Nifty Network Analysis & Visualization Dashboard",
-  date: "Oct 2025 – Nov 2025",
+  date: [ Oct 2025 -- Nov 2025 ],
   links: (
     (fontawesome.fa-github(), "https://github.com/adhxtry/nifty-network-analysis"),
     (fontawesome.fa-file-alt(), "https://www.dropbox.com/scl/fi/ce0myxe9vjwig55hgjws4/main.pdf?rlkey=zp2yls1yb8cix0rfwd1t2w0cc&st=seglxg08&dl=0")
@@ -193,68 +199,69 @@
 #exp(
   title: "Extensively Customizable Exam Scheduler using Graph Coloring",
   organization: "Vivek Kumar, Rahul Jana, Ayushman Shaha, Dr. Prafullkumar Tale",
-  date: "Oct 2024 – Jan 2025",
+  date: [ Oct 2024 -- Jan 2025 ],
   links: (
-    (fontawesome.fa-github(), "https://github.com/adhxtry/exam_scheduler"),
+    (fontawesome.fa-github(), "https://github.com/adhxtry/unisched"),
   ),
   details: [
-    - Discovered that exam schedules for 2,000+ students in my college
-      were being created manually, requiring significant effort.
-    - Developed an engine that assigns exams to time slots & halls
-      minimizing same-day conflicts ($<=$24h) using
-      graph coloring + randomized optimization heuristics.
-    - Supports multi-hall allocation when enrollment exceeds single capacity;
-      leverages NetworkX for constraint modeling.
+    - The exam schedules for 2,000+ students in my college were being created manually,
+      requiring lot of effort.
+    - Developed an engine that assigns exams to time slots & halls minimizing same-day
+      conflicts ($<=$24h).
+    - Uses graph coloring and randomized optimization heuristics for reaching close
+      to optimal scheduling.
+    - Supports multi-hall allocation when enrollment exceeds single capacity
   ],
 )
 
 #exp(
   title: "Texture Classification & Face Clustering for Image Search",
-  date: "Sep 2024 – Nov 2024",
+  date: [ Sep 2024 -- Nov 2024 ],
   links: (
     (fontawesome.fa-github(), "https://github.com/adhxtry/nomadium"),
   ),
   details: [
-    - The project aims to address the common challenge of navigating through directories containing a large
-      collection of images, enabling users to efficiently filter and search for images.
-    - Pipeline: MTCNN detection → InceptionResNetV1 embeddings → cosine similarity for face grouping.
-    - Implemented batching to control GPU memory and multiple texture descriptors for retrieval precision.
+    - Addresses the common challenge of navigating through a large collection of images,
+    - Enables the user to efficiently filter and search for images by face or texture.
+    - Implemented batching to control GPU memory and multiple texture descriptors for
+      retrieval precision.
   ],
 )
 
 #exp(
   title: "GUI Developer Intern",
   organization: "Mentor: Prof. Varadharajan Srinivasan",
-  date: "Feb 2024 – Aug 2024",
+  date: [ Feb 2024 -- Aug 2024 ],
   location: "AITG Labs",
   links: (
     (fontawesome.fa-github(), "https://github.com/aitgcodes/litesoph"),
     (fontawesome.fa-link(), "https://aitgcodes.github.io/litesoph-website/"),
   ),
   details: [
-    - Led integration of scientific engines (#link("https://octopus-code.org/")[Octopus],
+    - Led integration of DFT engines (#link("https://octopus-code.org/")[Octopus],
       #link("https://gpaw.readthedocs.io/")[GPAW], #link("https://www.nwchem-sw.org/")[NWChem])
       within a Python toolkit for photo-induced phenomena simulations.
-    - Automated submission workflows and job orchestration on national HPC clusters (PARAM-Ganga / PARAM-Kamrupa).
+    - Automated submission workflows and job orchestration on HPC clusters.
   ],
 )
 
 #exp(
   title: "Context aware Bag-of-Words Chatbot",
-  date: "Oct 2021 – Dec 2021",
+  date: [ Oct 2021 -- Dec 2021 ],
   links: (
     (fontawesome.fa-github(), "https://github.com/adhxtry/tensorBot"),
   ),
   details: [
-    - Built a context-aware chatbot supporting tasks like to-do lists, word definitions, note taking,
-      and time queries across timezones.
-    - Trained a sequential neural network in TensorFlow on a custom dataset tailored to project requirements.
+    - Built a context-aware chatbot supporting tasks like to-do lists, word definitions,
+      note taking, make jokes and time queries across timezones.
+    - Trained a sequential neural network in TensorFlow on a custom dataset tailored to
+      project requirements.
   ],
 )
 
 #exp(
   title: "General Purpose Discord Bot",
-  date: "Mar 2021",
+  date: [ Mar 2021 ],
   links: (
     (fontawesome.fa-github(), "https://github.com/adhxtry/UFO-BOT"),
   ),
@@ -269,19 +276,22 @@
 #exp(
   title: "Teaching Assistant - Theory of Computation",
   organization: "Instructed by Dr. Arpit Sharma",
-  date: "Aug 2025 – Dec 2025",
+  date: [ Aug 2025 -- Dec 2025 ],
 )
 
 #exp(
   title: "Fast Matrix Multiplication Algorithms",
   organization: "Math Club @ IISER Bhopal",
-  date: "1 Sept 2023",
+  date: [ 1 Sept 2023 ],
   links: (
     (fontawesome.fa-file-text(), "https://github.com/adhxtry/iiserbCodeCollective/tree/main/1_StrassenMultiplication"),
-  ),
-  details: [
-  - Delivered a talk on Strassen's algorithm and its implications on computational complexity.
-])
+  )
+)
+
+= Academic Achievements
+
+- Secured *rank 29* in GATE Data Science & Artificial Intelligence 2026 (percentile: 99.96)
+- Secured *rank 147* in GATE Computer Science 2026 (percentile: 99.93)
 
 
 = Leadership & Engagement
@@ -289,7 +299,7 @@
 #exp(
   title: "Club Coordinator",
   organization: "Coding club @ IISER Bhopal",
-  date: "May 2024 – May 2025",
+  date: [ May 2024 -- May 2025 ],
   // details: [
   //   - The club aims to foster competitive programming skills and algorithmic thinking among students.
   //   - It organizes onsite competitive programming contests; facilitates open discussions & tutorials.
@@ -298,9 +308,9 @@
 )
 
 #exp(
-  title: "Hackathon Organizer – Armacode 0",
-  organization: "IISER Bhopal × IIIT Bhopal",
-  date: "Jan 2024 – Apr 2024",
+  title: "Hackathon Organizer -- Armacode 0",
+  organization: "IISER Bhopal x IIIT Bhopal",
+  date: [ Jan 2024 -- Apr 2024 ],
   // details: [
   //   - Prepared questions for online round with over 500 applicants.
   //   - Co-organized a 35-hour national hackathon; collaborated with faculty and industry experts on
