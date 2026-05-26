@@ -105,7 +105,7 @@
     (fontawesome.fa-dropbox(), "https://www.dropbox.com/scl/fi/gi8ph0m3fbm3bztdnmmvw/bs-project.pdf?rlkey=kx55612n6a3dmze9xjnx5uvcs&st=mvkn174b&dl=0"),
   ),
   details: [
-    - Built an Python framework unifying model checking across multiple backends
+    - Built a Python framework unifying model checking across multiple backends
       (NuSMV, Spin, Storm) by embedding #smallcaps[Labelled Transition Systems] into
       #smallcaps[Kripke Structures].
     - Benchmarked and studied the feasibility of explicit model checking in embedded models.
@@ -205,12 +205,12 @@
   ),
   details: [
     - The exam schedules for 2,000+ students in my college were being created manually,
-      requiring lot of effort.
+      a lot of effort.
     - Developed an engine that assigns exams to time slots & halls minimizing same-day
       conflicts ($<=$24h).
     - Uses graph coloring and randomized optimization heuristics for reaching close
       to optimal scheduling.
-    - Supports multi-hall allocation when enrollment exceeds single capacity
+    - Supports multi-hall allocation when enrollment exceeds single capacity.
   ],
 )
 
@@ -266,7 +266,7 @@
     (fontawesome.fa-github(), "https://github.com/adhxtry/UFO-BOT"),
   ),
   details: [
-    - Python project that utilized PostrgreSQL to implement feature reach Discord bot.
+    - Python project that utilized PostgreSQL to implement feature-rich Discord bot.
   ],
 )
 
