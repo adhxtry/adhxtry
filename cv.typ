@@ -64,7 +64,7 @@
   degrees: (
     ("B.S.", "Computer Science & Engineering"),
   ),
-  gpa: [9.25 #footnote("Ongoing", numbering: "*")<ongoing>/10 (3.7/4)],
+  gpa: [9.34/10 (3.74/4)/* #footnote("Ongoing", numbering: "*")<ongoing> */],
   courses: (
     [Discrete Mathematics],
     [Probability & Statistics],
@@ -88,10 +88,10 @@
     [Information Theory & Coding],
     [Computer Organization],
     [Network Sciences],
-    [Operating Systems@ongoing],
-    [Computer Networks@ongoing],
-    [Advanced Programming@ongoing],
-    [Compiler Design@ongoing],
+    [Operating Systems],
+    [Computer Networks],
+    [Advanced Programming],
+    [Compiler Design],
   ),
 )
 
@@ -179,6 +179,8 @@
     "Rust (basic)"
   )
 )
+
+#pagebreak()
 
 
 = Technical Projects
@@ -284,14 +286,15 @@
   organization: "Math Club @ IISER Bhopal",
   date: [ 1 Sept 2023 ],
   links: (
-    (fontawesome.fa-file-text(), "https://github.com/adhxtry/iiserbCodeCollective/tree/main/1_StrassenMultiplication"),
+    (fontawesome.fa-person-chalkboard(), "https://github.com/adhxtry/iiserbCodeCollective/tree/main/1_StrassenMultiplication"),
   )
 )
 
 = Academic Achievements
 
-- Secured *rank 29* in GATE Data Science & Artificial Intelligence 2026 (percentile: 99.96)
-- Secured *rank 147* in GATE Computer Science 2026 (percentile: 99.93)
+- Secured *rank 29* (99.96 %ile) in GATE Data Science & Artificial Intelligence 2026
+- Secured *rank 147* (99.93 %ile) in GATE Computer Science 2026
+- Scored *92%* in 10th board (ICSE) and *91.2%* in 12th board (CBSE)
 
 
 = Leadership & Engagement
@@ -319,13 +322,12 @@
 )
 
 
-= Additional Interests
+= Co-curricular
 
 #compact-list-line((
   "Music (Guitar)",
   "Competitive Programming",
   "Speed Typing",
-  "Mathematical Visualization (Desmos, Manim)",
 ))
 
 // Publications section can be added if bibliography entries are available.
