@@ -16,7 +16,7 @@
   link("https://adhxtry.github.io/portfolio/")[#fontawesome.fa-link() adhxtry.github.io],
 )
 
-#let location = [4#super("th") year, BS Computer Science & Engineering, IISER Bhopal, India]
+#let location = [MTech Artificial Intelligence '28, IISc]
 
 // Resume configuration
 #let theme = rgb("#26428b")
@@ -95,93 +95,15 @@
   ),
 )
 
-= Research Projects
-
-#exp(
-  title: "Practical study on embeddings between KS and LTS",
-  organization: "Mentor: Dr. Arpit Sharma, PhD. Shonak Saha",
-  date: [ Dec 2025 -- Apr 2026 ],
-  links: (
-    (fontawesome.fa-dropbox(), "https://www.dropbox.com/scl/fi/gi8ph0m3fbm3bztdnmmvw/bs-project.pdf?rlkey=kx55612n6a3dmze9xjnx5uvcs&st=mvkn174b&dl=0"),
+#edu(
+  institution: "Indian Institute of Science",
+  date: [ 2026 -- 2028 ],
+  location: "Bangalore, India",
+  degrees: (
+    ("M.Tech.", "Artificial Intelligence"),
   ),
-  details: [
-    - Built a Python framework unifying model checking across multiple backends
-      (NuSMV, Spin, Storm) by embedding #smallcaps[Labelled Transition Systems] into
-      #smallcaps[Kripke Structures].
-    - Benchmarked and studied the feasibility of explicit model checking in embedded models.
-  ]
+  gpa: [_dnf_ #footnote("Ongoing", numbering: "*")<ongoing>]
 )
-
-#exp(
-  title: "On Robust Coloring of Graphs and ETH",
-  organization: "Mentor: Dr. Prafullkumar Tale",
-  date: [ July 2025 -- Jan 2026 ],
-  links: (
-    (fontawesome.fa-dropbox(), "https://www.dropbox.com/scl/fi/sryhu6iqr1htdpbcw8hb9/Robust_Coloring.pdf?rlkey=ndy34qaxtrfn9zpv5tzynt7yd&st=f418jyvl&dl=0"),
-  ),
-  details: [
-    - Studied a relaxation of proper coloring in which edges with same color are associated
-      with some cost.
-    - Studied the #smallcaps[Exponential Time Hypothesis], and ETH-Preserving reductions.
-    - Investigated treewidth; applied tree decompositions to dynamic programming on hard problems.
-  ],
-)
-
-
-#exp(
-  title: "Scientific Tool for Bridging Model Checking Ecosystems",
-  organization: "Mentor: Dr. Arpit Sharma, PhD. Shonak Shaha",
-  date: "Dec 2024 – Dec 2025",
-  links: (
-    (fontawesome.fa-github(), "https://github.com/GALTOSM/"),
-  ),
-  details: [
-    - The Model Checking ecosystem remains fragmented, with various tools and
-      frameworks lacking seamless interoperability specifically between action based and
-      state based model checking.
-    - Developing high-performance converters between action-labeled model checkers
-      (#link("https://cadp.inria.fr/")[CADP]) and (#link("https://www.mcrl2.org/")[mCRL2])
-      and state-labeled model checkers
-      (#link("https://www.prismmodelchecker.org/")[PRISM]) and
-      (#link("https://www.stormchecker.org/")[Storm])
-      to enable cross-ecosystem model checking.
-    - Emphasis on parser design, efficient graph transformations,
-      and AST driven translation, written in C++.
-  ],
-)
-
-#exp(
-  title: "Reading Project on Graph Theory",
-  organization: "Mentor: Dr. Prafullkumar Tale",
-  date: [ Jan 2024 -- Apr 2024 ],
-  links: (
-    (fontawesome.fa-book(), "https://books.google.co.in/books/about/A_First_Look_at_Graph_Theory.html?id=vLRNRebXuKYC"),
-  ),
-  details: [
-    - Studied #emph[A First Look at Graph Theory] (Clark & Holton) with problem solving.
-    - Reinforced concepts: Graphs & their types, connectivity, traversals, matching problem,
-      planarity.
-  ],
-)
-
-= Skills
-
-#compact-list-line(
-  (
-    "Python",
-    "C++ (CMake, GoogleTest)",
-    "Git & GitHub",
-    latex,
-    "typst",
-    "Linux Shell",
-    "CI/CD",
-    "React (basic)",
-    "Rust (basic)"
-  )
-)
-
-#pagebreak()
-
 
 = Technical Projects
 
@@ -206,8 +128,6 @@
     (fontawesome.fa-github(), "https://github.com/adhxtry/unisched"),
   ),
   details: [
-    - The exam schedules for 2,000+ students in my college were being created manually,
-      a lot of effort.
     - Developed an engine that assigns exams to time slots & halls minimizing same-day
       conflicts ($<=$24h).
     - Uses graph coloring and randomized optimization heuristics for reaching close
@@ -272,6 +192,69 @@
   ],
 )
 
+= Research Projects
+
+#exp(
+  title: "Practical study on embeddings between KS and LTS",
+  organization: "Mentor: Dr. Arpit Sharma, PhD. Shonak Saha",
+  date: [ Dec 2025 -- Apr 2026 ],
+  links: (
+    (fontawesome.fa-dropbox(), "https://www.dropbox.com/scl/fi/gi8ph0m3fbm3bztdnmmvw/bs-project.pdf?rlkey=kx55612n6a3dmze9xjnx5uvcs&st=mvkn174b&dl=0"),
+    (fontawesome.fa-github(), "https://github.com/adhxtry/bs-project/")
+  ),
+  details: [
+    - Built a Python framework for model checking of explicit
+      #smallcaps[Labelled Transition Systems] models
+    - Supported multiple backends (NuSMV, Spin, Storm) by embedding into
+      #smallcaps[Kripke Structures].
+    - Benchmarked and studied the feasibility of explicit model checking in embedded models.
+  ]
+)
+
+#exp(
+  title: "On Robust Coloring of Graphs and ETH",
+  organization: "Mentor: Dr. Prafullkumar Tale",
+  date: [ July 2025 -- Jan 2026 ],
+  links: (
+    (fontawesome.fa-dropbox(), "https://www.dropbox.com/scl/fi/sryhu6iqr1htdpbcw8hb9/Robust_Coloring.pdf?rlkey=ndy34qaxtrfn9zpv5tzynt7yd&st=f418jyvl&dl=0"),
+  ),
+  details: [
+    - Studied a relaxation of proper coloring in which edges with same color are associated
+      with some cost.
+    - Studied the #smallcaps[Exponential Time Hypothesis], and ETH-Preserving reductions.
+    - Investigated treewidth; applied tree decompositions to dynamic programming on hard problems.
+  ]
+)
+
+#exp(
+  title: "Reading Project on Graph Theory",
+  organization: "Mentor: Dr. Prafullkumar Tale",
+  date: [ Jan 2024 -- Apr 2024 ],
+  links: (
+    (fontawesome.fa-book(), "https://books.google.co.in/books/about/A_First_Look_at_Graph_Theory.html?id=vLRNRebXuKYC"),
+  ),
+  details: [
+    - Studied #emph[A First Look at Graph Theory] (Clark & Holton) with problem solving.
+    - Reinforced concepts: Graphs & their types, connectivity, traversals, matching problem,
+      planarity.
+  ],
+)
+
+= Skills
+
+#compact-list-line(
+  (
+    "Python",
+    "C++ (CMake, GoogleTest)",
+    "Git & GitHub",
+    latex,
+    "typst",
+    "Linux Shell",
+    "CI/CD",
+    "React",
+    "Rust"
+  )
+)
 
 = Talks & Teaching
 
