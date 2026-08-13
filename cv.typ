@@ -21,7 +21,8 @@
 // Resume configuration
 #let theme = rgb("#26428b")
 #let font = "Calibri"
-#let fontSize = 11.5pt
+#let font-size = 11.5pt
+#let mono-font = "JetBrainsMono NF" // Nerd Font installed in local machine
 #let lang = "en"
 #let latest-version-url = "https://adhxtry.github.io/adhxtry/cv_adheesh.pdf"
 #let margin = (
@@ -40,7 +41,9 @@
   contacts: contacts,
   theme-color: theme,
   font: font,
-  font-size: fontSize,
+  font-size: font-size,
+  // set monospaced font to jetbrains
+  monospaced-font: mono-font,
   lang: lang,
   latest-version-url: latest-version-url,
   margin: margin,
@@ -283,6 +286,13 @@
 = Leadership & Engagement
 
 #exp(
+  title: "Department Representative",
+  organization: "Electrical Engineering and Computer Science, IISER Bhopal",
+  date: [ Aug 2025 -- May 2026 ],
+
+)
+
+#exp(
   title: "Club Coordinator",
   organization: "Coding club @ IISER Bhopal",
   date: [ May 2024 -- May 2025 ],
@@ -294,7 +304,7 @@
 )
 
 #exp(
-  title: "Hackathon Organizer -- Armacode 0",
+  title: "Hackathon Organizer " + [-- `Armacode 0`],
   organization: "IISER Bhopal x IIIT Bhopal",
   date: [ Jan 2024 -- Apr 2024 ],
   // details: [

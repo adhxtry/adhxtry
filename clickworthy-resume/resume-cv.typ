@@ -5,6 +5,8 @@ Inspired by the template from the `guided-resume-starter-cgc` v2.0.0 package:
 https://github.com/typst/packages/blob/2da94b0f21174ae8366834332a6e44fd966de4dd/packages/preview/guided-resume-starter-cgc/2.0.0/template/templates/resume.template.typ
 */
 
+#let muted-color = rgb("#999")
+
 #let resume(
   author: "",
   location: "",
@@ -13,6 +15,7 @@ https://github.com/typst/packages/blob/2da94b0f21174ae8366834332a6e44fd966de4dd/
   theme-color: rgb("#26428b"),
   font: "New Computer Modern",
   font-size: 11pt,
+  monospaced-font: "New Computer Modern",
   lang: "en",
   latest-version-url: "",
   margin: (
@@ -35,13 +38,14 @@ https://github.com/typst/packages/blob/2da94b0f21174ae8366834332a6e44fd966de4dd/
     ligatures: false,  // Disable ligatures for better compatibility and readability
   )
 
+  show raw: set text(font: monospaced-font)
+
   set page(
     margin: margin,
     footer: context [
       #line(
         length: 100%,
-        stroke: 0.5pt + rgb("#ccc"),
-
+        stroke: 0.5pt + muted-color,
       )
       #grid(
         rows: 1fr,
@@ -63,7 +67,7 @@ https://github.com/typst/packages/blob/2da94b0f21174ae8366834332a6e44fd966de4dd/
     ],
   )
 
-  set list(marker: [--])
+  set list(marker: text(fill: muted-color)[--])
 
   show link: set text(
     fill: rgb("#0645AD")
@@ -167,7 +171,7 @@ Education section formatting, allowing enumeration of degrees and GPA.
     pad(
       top: -.5em,
       line(
-        stroke: 0.5pt + rgb("#ccc"),
+        stroke: 0.5pt + muted-color,
       )
     )
     pad(
