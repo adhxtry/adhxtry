@@ -1,28 +1,29 @@
-## About me
-
-### whoami
+```sh
+whoami
+```
 
 👋 I am Adheesh Trivedi!
 
-- 🔭 I’m a student at [IISER, Bhopal](https://www.iiserb.ac.in/)
-- 📫 How to reach me: **adheeshtrivedi@gmail.com**
-- 🎂 Birthday: 09<sup>th</sup> January, 2004
-- 🛕 My nationality is **Indian**
+- I’m a student at [IISc, Bangalore](https://www.iisc.ac.in/)
+- Pursuing MTech in !(Natural Stupidity)
+- Male? yes; Mail? `f"{firstname}{lastname}@gmail.com"`
 
 ----
 
-### Languages
+```sh
+ls-lang
+```
 
 #### Brothers with 🤙 (Proficient)
 - Python
 - C++
 
 #### Friends with 🤝 (Exploring)
-- Go
-- Typescript + HTML + CSS + React
-
-#### Crush 😳 (Want to explore more)
 - Rust
+- Typescript & React
+
+#### Crush 😳 (Want to know more)
+- Go
 - Kotlin
 - Lua
 
@@ -33,28 +34,22 @@
 
 ----
 
-### Currently Working On
+```sh
+htop
+```
 
-- ✅ Formal Verification using Model Checking
-- 🕸️ Graph theory (Specifically coloring problems)
-- 🤖 Experimenting with AI and ML projects
-- 📝 Writing technical blogs
-
-----
-
-### Hobbies & Interests
-
+- 🕸️ Graph theory
+- 🤖 Experimenting with AI and ML
 - 🎸 Playing guitar and learning music theory
-- 📈 Plotting fun equations on Desmos
-- 🌏 Exploring new cultures and cuisines
-- ⚙️ Getting upto date with tech news
+- ⚙️ Getting upto date with tech news (endlessly scrolling 𝕏)
+- 📝 Writing blogs
 
 ----
 
-### Fun Facts
+```sh
+fortune
+```
 
-- 🦸‍♂️ Can recite Pi up to 20 digits (but only when caffeinated)
-- 🦉 Night owl: Most productive after midnight
-- 🧑‍💻 Writes code with dark mode only
+🦇 _"+50% efficiency at darkness"_
 
 ----
